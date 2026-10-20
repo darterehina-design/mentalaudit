@@ -1,0 +1,46 @@
+:root{--navy:#0B2239;--deep:#153B59;--blue:#67BED9;--air:#DCEFF5;--paper:#F5F2EB;--ink:#26343D;--r:24px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:18px/1.55 "Noto Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:"Noto Serif",Georgia,serif;font-weight:700;margin:0;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 8%}
+.dark{background:var(--navy);color:#fff}
+.label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff}
+.logo img{width:44px;height:44px}
+.logo b{display:block;font:700 16px "Noto Sans";letter-spacing:.22em}
+.logo small{display:block;font-size:10px;letter-spacing:.2em;color:var(--blue)}
+nav a{margin-left:28px;text-decoration:none;font-size:15px;color:#fff}
+nav a:hover,nav a[aria-current]{color:var(--blue)}
+.hero{padding:72px 0 120px}
+.hero h1{font-size:clamp(40px,7vw,72px);max-width:12em;margin:20px 0 28px}
+.hero p{max-width:34em;color:var(--air);font-size:20px}
+.btn{display:inline-block;margin-top:36px;padding:14px 28px;border-radius:999px;background:var(--blue);color:var(--navy);font-weight:700;text-decoration:none}
+.btn:hover{background:#fff}
+section{padding:96px 0}
+section h2{font-size:clamp(30px,4.5vw,44px);margin:14px 0 40px;max-width:16em}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--air);border-radius:var(--r);padding:32px}
+.card h3{font-size:24px;margin-bottom:12px}
+.card p{margin:0}
+.card.navy{background:var(--deep);color:#fff}
+.card.navy .label{color:var(--blue)}
+.band{background:var(--air)}
+.band .card{background:var(--paper)}
+.quote{font:700 clamp(28px,5vw,48px)/1.1 "Noto Serif",serif;max-width:16em}
+.frame{border-left:2px solid var(--blue);padding-left:28px}
+footer{padding:48px 0;font-size:14px;color:var(--air)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.page-head{padding:24px 0 72px}
+.page-head h1{font-size:clamp(36px,6vw,60px);margin-top:20px}
+.page-head p{color:var(--air);max-width:32em}
+.cert{margin:0;background:#fff;border-radius:var(--r);overflow:hidden}
+.cert a{display:block}
+.cert img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:var(--air);color:var(--ink);font-size:14px}
+.cert figcaption{padding:20px 24px}
+.cert h3{font-size:20px;margin-bottom:4px}
+.cert span{font-size:14px;color:var(--deep)}
+@media(max-width:600px){nav a{margin-left:16px}.hero{padding:40px 0 80px}section{padding:64px 0}}
