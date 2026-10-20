@@ -56,6 +56,15 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
 .site-nav{display:flex;align-items:center;justify-content:flex-end;gap:clamp(12px,2vw,24px);flex-wrap:wrap}
 .site-nav a{white-space:nowrap}
+
+.comparison-card{display:flex;flex-direction:column;height:100%}
+.comparison-card .example{margin-top:auto}
+.case-card{display:flex;flex-direction:column;height:100%}
+.case-signature{margin-top:auto;padding-top:20px;min-height:112px}
+.case-signature p{margin:0;color:#071228}
+.case-signature .case-name{font-weight:600;margin-bottom:4px}
+.case-signature .case-role{font-size:15px;line-height:1.45;color:#3A4A66}
+.payment-note{margin:18px 0 0;font-size:14px;line-height:1.5;color:#3A4A66;max-width:900px}
 .format-card{display:flex;flex-direction:column;align-items:flex-start;height:100%}
 .format-card .price{margin-top:auto;padding-top:24px}
 .format-card>.btn{margin-top:0;max-width:100%;white-space:normal;text-align:center;line-height:1.25}
@@ -94,7 +103,7 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <p class="eb">Бизнес-коучинг для русскоговорящих предпринимателей</p>
 <h1>Вы выходите с сессии с решением, которое можно проверить</h1>
 <p class="muted" style="font-size:20px;margin:24px 0 32px">Не ещё один список дел, а чётко сформулированный результат, понимание, где прерывается движение, и следующий шаг на 1–2 недели. <b>За 60 минут по видеосвязи.</b></p>
-<a class="btn" href="#formats">Записаться на сессию — 90 €</a>
+<a class="btn" href="#formats">Записаться на сессию</a>
 <p style="margin:20px 0 0"><a href="#formats">Программа на 3 месяца</a></p>
 </div>
 <div class="card">
@@ -125,8 +134,8 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <h2 style="max-width:780px">Одно различие, после которого решения начинают работать</h2>
 <p class="muted" style="max-width:720px">Многие путают совет и коучинг. Совет даёт чужой ответ. Коучинг помогает найти свой и проверить его в действии.</p>
 <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))">
-<div class="card"><p class="tag">Уровень 1 · Совет и мотивация</p><h3>Чужой ответ</h3><ul class="muted"><li>Подсказывает, что делать, исходя из чужого опыта</li><li>Работает, пока вы слушаете</li><li>Не учитывает ваши цифры, команду и ограничения</li></ul><p class="muted"><b>Например.</b> Вам сказали «запускайте рекламу», и вы снова не знаете, с чего начать.</p></div>
-<div class="card" style="border-color:#9CC9FF"><p class="tag">Уровень 2 · Бизнес-коучинг</p><h3>Ваше решение</h3><ul><li>Определяет результат и критерии, по которым вы поймёте, что решение работает</li><li>Опирается на вашу реальную ситуацию</li><li>Заканчивается шагом, который можно проверить за 1–2 недели</li></ul><p class="muted"><b>Например.</b> Вы выходите с одним решением и понимаете, почему именно оно.</p></div>
+<div class="card comparison-card"><p class="tag">Уровень 1 · Совет и мотивация</p><h3>Чужой ответ</h3><ul class="muted"><li>Подсказывает, что делать, исходя из чужого опыта</li><li>Работает, пока вы слушаете</li><li>Не учитывает ваши цифры, команду и ограничения</li></ul><p class="muted example"><b>Например.</b> Вам сказали «запускайте рекламу», и вы снова не знаете, с чего начать.</p></div>
+<div class="card comparison-card" style="border-color:#9CC9FF"><p class="tag">Уровень 2 · Бизнес-коучинг</p><h3>Ваше решение</h3><ul><li>Определяет результат и критерии, по которым вы поймёте, что решение работает</li><li>Опирается на вашу реальную ситуацию</li><li>Заканчивается шагом, который можно проверить за 1–2 недели</li></ul><p class="muted example"><b>Например.</b> Вы выходите с одним решением и понимаете, почему именно оно.</p></div>
 </div>
 <p style="margin-top:32px"><b>Большинство застряло на первом уровне.</b> <a href="#formats">Перейти на второй</a></p>
 </div>
@@ -138,9 +147,10 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <h2 style="max-width:780px">Два шага: от одной сессии до системы на три месяца</h2>
 <p style="max-width:700px">Вы выбираете не количество встреч, а масштаб задачи. Можно начать с любого формата.</p>
 <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))">
-<div class="lcard format-card"><p class="tag">Шаг 1 · 60 минут</p><h3>Ментальный аудит</h3><p>Одна конкретная ситуация или решение, в котором вы застряли.</p><p class="lbl">После встречи у вас</p><ul><li>Чётко сформулированная цель</li><li>Понимание, где прерывается движение</li><li>Следующий шаг на 1–2 недели</li><li>Видео встречи и краткое резюме</li></ul><div class="price">90 €</div><a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05">Записаться и оплатить</a></div>
-<div class="lcard format-card"><p class="tag">Шаг 2 · 3 месяца</p><h3>Второе дыхание</h3><p>Одна–две связанные бизнес-цели: от ясности до внедрения решений.</p><p class="lbl">В программе</p><ul><li>12 сессий по 90 минут, раз в неделю</li><li>Понятные приоритеты и собственные критерии решений</li><li>План на каждый месяц</li><li>Поддержка в Telegram между встречами</li><li>Договор на русском и английском</li></ul><div class="price">1200 € <span style="font-family:'Jost',sans-serif;font-size:17px;font-weight:400;color:#3A4A66">или 3 × 400 €</span></div><a class="btn" href="https://buy.stripe.com/dRm00iehZbLy1o19AYdIA06">Записаться на программу</a></div>
+<div class="lcard format-card"><p class="tag">Шаг 1 · 60 минут</p><h3>Ментальный аудит</h3><p>Одна конкретная ситуация или решение, в котором вы застряли.</p><p class="lbl">После встречи у вас</p><ul><li>Чётко сформулированная цель</li><li>Понимание, где прерывается движение</li><li>Следующий шаг на 1–2 недели</li><li>Видео встречи и краткое резюме</li></ul><div class="price">90 €</div><a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05">ОПЛАТИТЬ</a></div>
+<div class="lcard format-card"><p class="tag">Шаг 2 · 3 месяца</p><h3>Второе дыхание</h3><p>Одна–две связанные бизнес-цели: от ясности до внедрения решений.</p><p class="lbl">В программе</p><ul><li>12 сессий по 90 минут, раз в неделю</li><li>Понятные приоритеты и собственные критерии решений</li><li>План на каждый месяц</li><li>Поддержка в Telegram между встречами</li><li>Договор на русском и английском</li></ul><div class="price">1200 € <span style="font-family:'Jost',sans-serif;font-size:17px;font-weight:400;color:#3A4A66">или 3 × 400 €</span></div><a class="btn" href="https://buy.stripe.com/dRm00iehZbLy1o19AYdIA06">ОПЛАТИТЬ</a></div>
 </div>
+<p class="payment-note">Расчёт возможен в евро (€), долларах ($), рублях (₽), тенге (₸) и гривнах (₴). Напишите мне, и я пришлю ссылку на оплату в той валюте, в которой вам удобнее оплатить сессию.</p>
 </div>
 </div>
 
@@ -163,9 +173,9 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <p class="eb">Кейсы</p>
 <h2>Что получили клиенты</h2>
 <div class="row3">
-<div class="lcard"><p class="tag">IT и фаундеры · 1 сессия</p><h3 style="font-size:21px">От расфокуса к конкретной цели</h3><ul><li>Желание и цель стали конкретными</li><li>Подписал договор с одним клиентом, ответы ещё от двух</li></ul><p style="margin:20px 0 0;font-weight:600;color:#071228">Вячеслав Белоусов</p><p style="font-size:15px">Бизнес-трекер, руководитель ИТ-команд</p></div>
-<div class="lcard"><p class="tag">Собственник компании · бизнес-трекинг</p><h3 style="font-size:21px">Два чётких направления бизнеса вместо хаоса</h3><ul><li>Выявили главное ограничение</li><li>Перезаключили два контракта из трёх с повышением</li></ul><p style="margin:20px 0 0;font-weight:600;color:#071228">Дмитрий Костин</p><p style="font-size:15px">CEO ООО «Вирана»</p></div>
-<div class="lcard"><p class="tag">Недвижимость · бизнес-трекинг, 3 месяца</p><h3 style="font-size:21px">Прибыль выросла с 2 до 3 млн ₽ за три месяца</h3><ul><li>Внедрена CRM и система закрытия заявок</li><li>Инвесторов стало в 10 раз больше</li></ul><p style="margin:20px 0 0;font-weight:600;color:#071228">Антон Кремниев</p><p style="font-size:15px">Практикующий инвестор, эксперт по премиум-недвижимости, Москва</p></div>
+<div class="lcard case-card"><p class="tag">IT и фаундеры · 1 сессия</p><h3 style="font-size:21px">От расфокуса к конкретной цели</h3><ul><li>Желание и цель стали конкретными</li><li>Подписал договор с одним клиентом, ответы ещё от двух</li></ul><div class="case-signature"><p class="case-name">Вячеслав Белоусов</p><p class="case-role">Бизнес-трекер, руководитель ИТ-команд</p></div></div>
+<div class="lcard case-card"><p class="tag">Собственник компании · бизнес-трекинг</p><h3 style="font-size:21px">Два чётких направления бизнеса вместо хаоса</h3><ul><li>Выявили главное ограничение</li><li>Перезаключили два контракта из трёх с повышением</li></ul><div class="case-signature"><p class="case-name">Дмитрий Костин</p><p class="case-role">CEO ООО «Вирана»</p></div></div>
+<div class="lcard case-card"><p class="tag">Недвижимость · бизнес-трекинг, 3 месяца</p><h3 style="font-size:21px">Прибыль выросла с 2 до 3 млн ₽ за три месяца</h3><ul><li>Внедрена CRM и система закрытия заявок</li><li>Инвесторов стало в 10 раз больше</li></ul><div class="case-signature"><p class="case-name">Антон Кремниев</p><p class="case-role">Практикующий инвестор, эксперт по премиум-недвижимости, Москва</p></div></div>
 </div>
 <p style="margin-top:32px"><a href="https://t.me/customerreviews_fromdaria">Читать больше отзывов в Telegram</a></p>
 <p style="font-size:14px">Это слова клиентов. Результат зависит от вашего продукта, рынка и того, что вы сделаете после встречи.</p>
@@ -199,7 +209,7 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <div class="lcard"><p class="q">04</p><p style="margin:0">После встречи вы получаете резюме, план и поддержку в переписке.</p></div>
 </div>
 <p style="margin-top:32px;max-width:720px"><b>Честно.</b> Если по вашему запросу я пойму, что коучинг сейчас не поможет, я скажу об этом.</p>
-<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05" style="background:#071228;color:#fff">Оплатить сессию — 90 €</a><a class="btn" href="mailto:dariaterekhina@mentalaudit.fr" style="background:transparent;border:2px solid #071228;color:#071228">dariaterekhina@mentalaudit.fr</a><a class="btn" href="https://t.me/dar_terehina" style="background:transparent;border:2px solid #071228;color:#071228">Telegram @dar_terehina</a><a class="btn" href="https://wa.me/33604198367?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%94%D0%B0%D1%80%D1%8C%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E%20%C2%AB%D0%9C%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B0%D1%83%D0%B4%D0%B8%D1%82%C2%BB." style="background:transparent;border:2px solid #071228;color:#071228">WhatsApp</a></div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05" style="background:#071228;color:#fff">ОПЛАТИТЬ</a><a class="btn" href="mailto:dariaterekhina@mentalaudit.fr" style="background:transparent;border:2px solid #071228;color:#071228">dariaterekhina@mentalaudit.fr</a><a class="btn" href="https://t.me/dar_terehina" style="background:transparent;border:2px solid #071228;color:#071228">Telegram @dar_terehina</a><a class="btn" href="https://wa.me/33604198367?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%94%D0%B0%D1%80%D1%8C%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E%20%C2%AB%D0%9C%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B0%D1%83%D0%B4%D0%B8%D1%82%C2%BB." style="background:transparent;border:2px solid #071228;color:#071228">WhatsApp</a></div>
 <p style="margin-top:20px;font-size:16px">Отвечу в течение 24 часов.</p>
 </div>
 </div>
@@ -233,6 +243,7 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <figure class="cert-card"><a href="images/act-psychodemia-2022.jpg" target="_blank" rel="noopener noreferrer"><img src="images/act-psychodemia-2022.jpg" alt="Сертификат курса «Уникальность подхода ACT»" loading="lazy" decoding="async"></a><figcaption><h3>Уникальность подхода ACT</h3><p>Psychodemia · обзорный курс · сентябрь 2022</p></figcaption></figure>
 <figure class="cert-card"><a href="images/mentor-2022.jpg" target="_blank" rel="noopener noreferrer"><img src="images/mentor-2022.jpg" alt="Сертификат наставника Академии трекеров" loading="lazy" decoding="async"></a><figcaption><h3>Сертификат наставника</h3><p>Академия трекеров · декабрь 2022</p></figcaption></figure>
 <figure class="cert-card"><a href="images/tracker-2021.jpg" target="_blank" rel="noopener noreferrer"><img src="images/tracker-2021.jpg" alt="Сертификат трекера Академии трекеров" loading="lazy" decoding="async"></a><figcaption><h3>Сертификат трекера</h3><p>Академия трекеров · 8-недельный курс · июль 2021</p></figcaption></figure>
+<figure class="cert-card"><a href="images/international-coach%20level%202%202026.jpg" target="_blank" rel="noopener noreferrer"><img src="images/international-coach%20level%202%202026.jpg" alt="Диплом International-Level Professional Coach, CoachingUp University" loading="lazy" decoding="async"></a><figcaption><h3>International-Level Professional Coach</h3><p>CoachingUp University · диплом выдан 23 июня 2026 года</p></figcaption></figure>
 </div>
 </div>
 </div>
@@ -260,7 +271,7 @@ p,li{overflow-wrap:break-word;text-wrap:pretty}
 <p class="eb">P.S.</p>
 <h2 style="max-width:760px;margin-left:auto;margin-right:auto">Один час вместо ещё одного месяца «надо разобраться»</h2>
 <p class="muted" style="max-width:640px;margin:0 auto 32px">Представьте, что через неделю у вас есть понятная цель, выбранный шаг и первые данные о том, работает ли он, а не ещё один список дел.</p>
-<a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05">Записаться на сессию — 90 €</a>
+<a class="btn" href="https://buy.stripe.com/00weVc6PxbLyd6J4gEdIA05">ОПЛАТИТЬ</a>
 </div>
 </div>
 </div>
