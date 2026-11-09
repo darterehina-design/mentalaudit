@@ -24,3 +24,4 @@
 .story-soon:hover{transform:none;border-color:#ddd4c7}.story-soon-label{color:#a18764;letter-spacing:.14em;text-transform:uppercase;font-size:11px}
 @media(min-width:791px) and (max-width:1000px){.manner-yes p{font-size:21px}}@media(max-width:420px){.manner-yes p{font-size:20px}}
 @media(min-width:791px) and (max-width:880px){.manner-yes p{font-size:19px}}@media(max-width:380px){.manner-yes p{font-size:17.5px}}
+@media(min-width:791px){.hero-media{align-self:center;height:clamp(570px,48vw,655px);min-height:0}.hero-media>img{max-height:none;min-height:0}}
