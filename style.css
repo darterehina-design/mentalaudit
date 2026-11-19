@@ -334,3 +334,15 @@ ul{margin:0;padding-left:20px}
 /* пузырь на обложке: дальше от головы, правее и выше */
 @media (min-width:1001px){.cover-art .bubble{right:-64px;top:-22px;max-width:340px}}
 @media (min-width:1001px) and (max-width:1280px){.cover-art .bubble{right:-18px}}
+
+/* этапы кривой культурного шока */
+.stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.stages .frame{grid-column:auto}
+.stage .q{font:400 21px/1.3 'Pangolin',cursive}
+.coach-help{margin-top:auto;background:var(--paper-2);border:2px solid var(--ink);padding:10px 12px;font-size:15px}
+.coach-help b{color:var(--ink)}
+.small-note{font-size:13px;color:var(--muted)}
+.stage.key .frame-top{background:var(--pink);color:var(--white)}
+.stage.key .coach-help{background:var(--gold)}
+@media (max-width:1000px){.stages{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.stages{grid-template-columns:1fr}}
