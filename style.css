@@ -349,3 +349,11 @@ ul{margin:0;padding-left:20px}
 
 /* кадры «Февраль 2022» и «Сейчас»: белые, с розовой шапкой */
 .frame.accent .frame-top{background:var(--pink);color:var(--white)}
+
+/* iPhone: реплика над фото, не закрывает лицо */
+@media (max-width:760px){
+  .cover-art{display:flex;flex-direction:column;padding:0 0 18px;max-width:440px}
+  .cover-art .bubble{position:relative;order:-1;top:auto;right:auto;left:auto;max-width:none;align-self:stretch;margin:0 6px 30px;transform:rotate(-1.2deg);font-size:19px}
+  .cover-art .cover-photo{transform:rotate(1deg);margin:0 4px}
+  .cover-art .burst{right:12px;bottom:4px;width:124px;padding:24px}
+}
