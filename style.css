@@ -53,7 +53,7 @@ ul{margin:0;padding-left:20px}
 .burst{display:flex;align-items:center;justify-content:center;text-align:center;width:172px;aspect-ratio:1;background:var(--pink);color:var(--white);font:800 12px/1.2 'Unbounded',sans-serif;padding:36px;clip-path:polygon(50% 0,59% 18%,79% 6%,76% 27%,97% 25%,84% 42%,100% 55%,80% 63%,90% 83%,69% 79%,64% 100%,50% 85%,36% 100%,31% 79%,10% 83%,20% 63%,0 55%,16% 42%,3% 25%,24% 27%,21% 6%,41% 18%);filter:drop-shadow(4px 4px 0 var(--ink))}
 .halftone{position:relative;overflow:hidden;background:var(--ink)}
 .halftone img{width:100%;height:100%;object-fit:cover;filter:contrast(1.12) saturate(1.15)}
-.halftone::after{content:'';position:absolute;inset:0;background:radial-gradient(rgba(12,48,38,.45) 1px,transparent 1.7px) 0 0/5px 5px;mix-blend-mode:multiply;pointer-events:none}
+
 .sfx{font:900 clamp(26px,3vw,40px)/1 'Unbounded',sans-serif;color:var(--gold);-webkit-text-stroke:2px var(--ink);text-shadow:3px 3px 0 var(--ink);letter-spacing:-.02em}
 
 /* ---------- Кнопки ---------- */
@@ -332,5 +332,5 @@ ul{margin:0;padding-left:20px}
 }
 .stages-m li::marker{color:var(--ink)}
 /* пузырь на обложке: дальше от головы, правее и выше */
-@media (min-width:1001px){.cover-art .bubble{right:-64px;top:-22px;max-width:310px}}
+@media (min-width:1001px){.cover-art .bubble{right:-64px;top:-22px;max-width:340px}}
 @media (min-width:1001px) and (max-width:1280px){.cover-art .bubble{right:-18px}}
