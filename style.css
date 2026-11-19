@@ -456,3 +456,9 @@ ul{margin:0;padding-left:20px}
 /* «Свой сценарий»: Й сверху и хвост Щ снизу — компенсируем оба края */
 .headline span.yo{padding-top:.4em;padding-bottom:.34em}
 @media (max-width:760px){.headline span.yo{padding-top:.54em;padding-bottom:.42em}}
+/* Десктоп: облачко компактнее и над головой */
+@media (min-width:1001px){
+  .cover-art .bubble{top:-64px;right:-40px;max-width:400px;font-size:17px;line-height:1.3;padding:14px 22px 16px}
+  .cover-art{margin-top:40px}
+}
+@media (min-width:1001px) and (max-width:1280px){.cover-art .bubble{right:-12px;max-width:360px}}
