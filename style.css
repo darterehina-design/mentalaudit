@@ -346,3 +346,6 @@ ul{margin:0;padding-left:20px}
 .stage.key .coach-help{background:var(--gold)}
 @media (max-width:1000px){.stages{grid-template-columns:1fr 1fr}}
 @media (max-width:760px){.stages{grid-template-columns:1fr}}
+
+/* кадры «Февраль 2022» и «Сейчас»: белые, с розовой шапкой */
+.frame.accent .frame-top{background:var(--pink);color:var(--white)}
