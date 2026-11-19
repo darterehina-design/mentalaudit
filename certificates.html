@@ -89,5 +89,22 @@
     <p class="legal">Коучинг не является психотерапией или медицинской помощью. Результаты зависят от ситуации и действий клиента; доход не гарантируется.</p>
   </div>
 </footer>
+<script data-goatcounter="https://dariaterekhina.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;
+  var h=a.href,n=null;
+  if(h.indexOf('cal.com')>-1)n='klik-zapis-znakomstvo';
+  else if(h.indexOf('t.me/dar_terehina')>-1)n='klik-telegram-lichno';
+  else if(h.indexOf('t.me/customerreviews')>-1)n='klik-otzyvy';
+  else if(h.indexOf('t.me/thinkclearly')>-1)n='klik-kanal-dumay-yasno';
+  else if(h.indexOf('wa.me')>-1)n='klik-whatsapp';
+  else if(h.indexOf('substack')>-1)n='klik-substack';
+  else if(h.indexOf('instagram')>-1)n='klik-instagram';
+  else if(h.indexOf('threads')>-1)n='klik-threads';
+  else if(h.indexOf('youtube')>-1)n='klik-youtube';
+  if(n&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:n,title:(a.textContent||'').trim().slice(0,60)+' — '+location.pathname,event:true});
+});
+</script>
 </body>
 </html>
