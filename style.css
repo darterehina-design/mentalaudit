@@ -331,3 +331,6 @@ ul{margin:0;padding-left:20px}
   .stages-m .coach{background:var(--pink);color:var(--white);padding:4px 8px}
 }
 .stages-m li::marker{color:var(--ink)}
+/* пузырь на обложке: дальше от головы, правее и выше */
+@media (min-width:1001px){.cover-art .bubble{right:-64px;top:-22px;max-width:310px}}
+@media (min-width:1001px) and (max-width:1280px){.cover-art .bubble{right:-18px}}
