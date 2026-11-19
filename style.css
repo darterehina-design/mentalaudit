@@ -357,3 +357,43 @@ ul{margin:0;padding-left:20px}
   .cover-art .cover-photo{transform:rotate(1deg);margin:0 4px}
   .cover-art .burst{right:12px;bottom:4px;width:124px;padding:24px}
 }
+
+/* Воздух внутри плашек: текст не прилипает к краям */
+.caption{padding:8px 18px 9px}
+.bubble{padding:20px 26px 22px}
+.headline span{padding:.12em .32em .16em}
+.subcover h1 span{padding:.04em .28em .08em}
+.frame-top{padding:11px 18px;gap:14px}
+.frame-body{padding:22px 24px 24px}
+.coach-help{padding:14px 18px 15px}
+.panel-pad{padding:30px 32px 32px}
+.vs .panel{padding:32px 34px}
+.cut-list li{padding:16px 22px 16px 58px}
+.secret{padding:34px 34px}
+.fact{padding:16px 18px 18px}
+.ticket-head{padding:26px 28px 20px}
+.ticket-body{padding:24px 28px 28px}
+.faq summary{padding:18px 60px 18px 24px}
+.faq details p{padding:0 24px 20px}
+.values .panel{padding:24px 26px}
+.channels .panel{padding:26px 28px}
+.doc{padding:24px 26px}
+.socials a{padding:7px 14px}
+.btn{padding:14px 26px}
+.nav .btn{padding:9px 18px}
+.finale .sfx{padding:.24em .5em .3em}
+@media (max-width:760px){
+  .bubble{padding:18px 22px 20px}
+  .frame-top{padding:10px 16px}
+  .frame-body{padding:20px 20px 22px}
+  .coach-help{padding:13px 16px 14px}
+  .panel-pad,.vs .panel,.secret{padding:26px 22px}
+  .cut-list li{padding:15px 18px 15px 54px}
+  .fact{padding:12px 12px 14px}
+  .ticket-head{padding:22px 22px 18px}
+  .ticket-body{padding:22px 22px 24px}
+  .faq summary{padding:17px 58px 17px 20px}
+  .faq details p{padding:0 20px 18px}
+  .doc{padding:20px}
+  .btn{padding:14px 20px}
+}
