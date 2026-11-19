@@ -424,3 +424,15 @@ ul{margin:0;padding-left:20px}
   .subcover h1 span{padding:4px 12px 6px}
   .subcover h1,.subcover-split h1{font-size:clamp(24px,7.4vw,30px)}
 }
+
+/* Десктоп: заголовок-плашки меньше, ровные отступы, не наезжают на фото */
+@media (min-width:761px){
+  .headline{font-size:clamp(30px,3.5vw,50px);gap:16px}
+  .headline span{padding:.16em .42em .2em}
+  .headline span:nth-child(2){transform:rotate(.9deg) translateX(.2em)}
+  .cover-grid{gap:72px}
+  .frame-top{font-size:15px}
+}
+@media (min-width:1001px){
+  .cover-grid>div:first-child{max-width:100%;padding-right:8px}
+}
