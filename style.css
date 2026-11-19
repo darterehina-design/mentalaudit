@@ -453,3 +453,6 @@ ul{margin:0;padding-left:20px}
 /* Плашка с Ё: точки над буквой не съедают верхний отступ */
 .headline span.yo{padding-top:.42em}
 @media (max-width:760px){.headline span.yo{padding-top:.56em}}
+/* «Свой сценарий»: Й сверху и хвост Щ снизу — компенсируем оба края */
+.headline span.yo{padding-top:.4em;padding-bottom:.34em}
+@media (max-width:760px){.headline span.yo{padding-top:.54em;padding-bottom:.42em}}
