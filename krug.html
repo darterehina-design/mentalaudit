@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0c3026">
+<title>Туда, где навстречу. Переехавшие: ближний круг | Дарья Терёхина</title>
+<meta name="description" content="Групповая программа для переехавших: 90 дней, до 10 человек, Zoom раз в неделю и Telegram-чат. Первый месяц бесплатно, дальше 15 € в месяц.">
+<meta property="og:title" content="Туда, где навстречу — 90 дней для переехавших">
+<meta property="og:description" content="Хватит доказывать, что вы не верблюд. Идём туда, где мир отвечает встречным движением.">
+<meta property="og:image" content="https://mentalaudit.fr/images/daria-keys.jpg">
+<link rel="icon" type="image/svg+xml" href="mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&family=Pangolin&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261119i">
+<style>
+/* ---- Только для страницы «Ближний круг» ---- */
+.pic{border:var(--line) solid var(--ink);box-shadow:var(--shadow)}
+.pic img{height:100%;object-fit:cover}
+.with-photo{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:48px;align-items:start}
+.with-photo.flip{grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr)}
+.photo-stack{position:relative;display:flex;flex-direction:column;gap:30px}
+.photo-stack .bubble{max-width:340px}
+.tall{aspect-ratio:3/4}
+.tall img{object-position:center 30%}
+.chain{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font:400 20px/1.3 'Pangolin',cursive}
+.chain span{background:var(--white);border:2px solid var(--ink);padding:6px 14px 7px}
+.chain i{font-style:normal;font-weight:800}
+.vs .advice .chain span{text-decoration:line-through;text-decoration-color:var(--pink);text-decoration-thickness:2px}
+.vs .ours .chain span{background:var(--white)}
+.logline{font:800 clamp(22px,2.7vw,36px)/1.25 'Unbounded',Arial,sans-serif;letter-spacing:-.015em;max-width:1000px;margin-bottom:44px}
+.logline em{font-style:normal;color:var(--gold)}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.two-col .panel{padding:30px 32px}
+.two-col h3{margin-bottom:14px}
+.two-col ul{display:grid;gap:10px}
+.season ul{gap:14px}
+.season li b{display:block;font-size:15px}
+.season .free{background:var(--gold);color:var(--ink);padding:2px 10px;border:2px solid var(--ink);font:800 12px/1.3 'Unbounded',sans-serif}
+.facts4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rules .frame{grid-column:auto}
+.rules ul{display:grid;gap:10px;font-size:16px}
+.rules .ban .frame-top{background:var(--pink);color:var(--white)}
+.rules .ban{background:var(--ink);color:var(--paper)}
+.rules .no .frame-top{background:var(--paper-2)}
+.log{list-style:none;padding:0;display:grid;gap:10px;margin:22px 0}
+.log li{background:var(--white);border:2px solid var(--ink);padding:12px 16px 12px 50px;position:relative;font-size:16px}
+.log li::before{content:'✓';position:absolute;left:14px;top:10px;width:24px;height:24px;display:grid;place-items:center;background:var(--gold);border:2px solid var(--ink);font:900 13px/1 'Unbounded',sans-serif}
+.turn{font:400 clamp(20px,2vw,25px)/1.35 'Pangolin',cursive;margin:18px 0 6px}
+.turn b{background:var(--pink);color:var(--white);padding:0 8px;font-weight:400}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}
+.duo .halftone{height:230px}
+.duo figcaption{margin-top:10px}
+.duo figure{margin:0}
+.tickets2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px}
+.finale-grid{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:44px;align-items:center;text-align:left}
+.finale-grid .cta-row{justify-content:flex-start}
+.finale-grid p{margin:0 0 28px}
+.finale-grid h2{margin:0 0 18px}
+.finale-pic{aspect-ratio:1;transform:rotate(-2deg)}
+@media (max-width:1000px){
+  .with-photo,.with-photo.flip{grid-template-columns:1fr}
+  .photo-stack{max-width:440px}
+  .rules{grid-template-columns:1fr 1fr}
+  .facts4{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .two-col,.rules,.duo,.tickets2,.finale-grid{grid-template-columns:1fr}
+  .finale-grid{text-align:center}
+  .finale-grid .cta-row{justify-content:center}
+  .finale-pic{max-width:260px;margin:0 auto}
+  .chain{font-size:18px}
+  .facts4{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="masthead">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Mental Audit, на главную">
+      <svg viewBox="0 0 72 72" fill="none" aria-hidden="true"><path d="M36 4 49 25 64 20 56 52 36 65 16 52 8 20 23 25 36 4Z" stroke="currentColor" stroke-width="3"/><path d="M36 4v61M8 20l28 45 28-45M23 25l13 40 13-40" stroke="currentColor" stroke-opacity=".5" stroke-width="1.6"/></svg>
+      <span><b>MENTAL<span>AUDIT</span></b><small>Дарья Терёхина</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="blog.html">Истории</a>
+      <a href="certificates.html">Сертификаты</a>
+      <a href="krug.html" aria-current="page">Ближний круг</a>
+      <a class="btn btn-gold" href="https://t.me/dar_terehina" target="_blank" rel="noopener">Хочу в круг</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ОБЛОЖКА -->
+<section class="subcover subcover-split">
+  <div class="wrap cover-grid">
+    <div>
+      <div class="issue">
+        <span class="caption">Переехавшие: ближний круг</span>
+        <span class="caption ink">90 дней</span>
+      </div>
+      <h1>Туда, <span>где навстречу</span></h1>
+      <p class="lead">Групповой эксперимент для тех, кто переехал и строит жизнь, работу или бизнес заново. 90 дней мы <strong>перестаём уговаривать закрытые двери</strong>, идём за своими желаниями, действуем — и смотрим, где мир отвечает встречным движением.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://t.me/dar_terehina" target="_blank" rel="noopener">Хочу в круг</a>
+        <a class="btn" href="#program">Что будет 90 дней</a>
+      </div>
+      <p class="cover-note">До 10 человек. Zoom раз в неделю. Первый месяц бесплатно, дальше 15 € в месяц, выйти можно когда угодно.</p>
+    </div>
+    <div class="cover-art">
+      <div class="panel halftone cover-photo"><img src="images/daria-keys.jpg" alt="Рука Дарьи держит ключи от новой квартиры на фоне улицы Монпелье" fetchpriority="high" style="object-position:center 40%"></div>
+      <p class="bubble tail-right">Ключи от своих апартов. Не «повезло», а перестала стучать туда, где не открывают.</p>
+      <div class="burst"><span>0&nbsp;€<br>первый месяц</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ПИЛОТНАЯ СЕРИЯ: УЗНАЁТЕ СЕБЯ -->
+<section class="scene">
+  <div class="wrap with-photo">
+    <div class="photo-stack">
+      <div class="panel halftone tall"><img src="images/daria-praying.jpg" alt="Дарья в очках умоляюще сложила руки" loading="lazy" style="object-position:center 55%"></div>
+      <p class="bubble tail-right">Ну поверьте, пожалуйста: я не верблюд. Вот справка. И ещё одна. И перевод справки.</p>
+    </div>
+    <div>
+      <span class="caption">Пилотная серия</span>
+      <h2 style="margin:20px 0 18px">Хватит доказывать, что вы не верблюд</h2>
+      <p style="font-size:18px;margin-bottom:26px">Если вы переехали, то сто процентов узнаете хотя бы пару кадров:</p>
+      <ul class="cut-list">
+        <li>Двадцатый раз доказываете CAF, банку и префектуре, что вы — это вы. Ой, справка опять не та</li>
+        <li>Восьмой месяц «развиваете Instagram», а клиенты пишут только «а сколько стоит?» и исчезают</li>
+        <li>Держитесь за работу, проект или человека, потому что «ну столько же уже вложено»</li>
+        <li>Вечерами залипаете в чатах переехавших: кого развели, где какая префектура звереет — а своё стоит</li>
+        <li>Вы единственный мотор всего вокруг. И мотор уже дымит</li>
+        <li>Слышите «ну ты же во Франции, чего тебе ещё надо?» — и почти соглашаетесь</li>
+      </ul>
+      <div class="panel panel-pad" style="margin-top:30px;transform:rotate(-.6deg)">
+        <h3 style="margin-bottom:10px">А «жили у бабуси два весёлых гуся» — не к нам</h3>
+        <p style="font-size:16px">Мы не разбираем по двадцатому кругу, кто кому что сказал, кто виноват и какие все вокруг гуси. Мы смотрим на ваши действия и на то, что отвечает реальность.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЛОГЛАЙН И ФОРМУЛА -->
+<section class="scene scene-ink">
+  <div class="wrap">
+    <span class="caption" style="transform:rotate(-1.5deg);margin-bottom:26px">Логлайн сезона</span>
+    <p class="logline">Какую жизнь и бизнес можно построить за 90 дней, если перестать сливать ресурс туда, где <em>не отвечают взаимностью</em>, — и начать вкладываться туда, где есть <em>встречное движение</em>?</p>
+    <div class="vs">
+      <div class="panel advice">
+        <h3>Было</h3>
+        <div class="chain"><span>хочу</span><i>→</i><span>стена</span><i>→</i><span>ещё больше усилий</span><i>→</i><span>ещё больше контроля</span><i>→</i><span>истощение</span><i>→</i><span>«надо просто сильнее стараться»</span></div>
+      </div>
+      <div class="vs-mid"><div class="burst"><span>VS</span></div></div>
+      <div class="panel ours">
+        <h3>Будет</h3>
+        <div class="chain"><span>хочу</span><i>→</i><span>действую</span><i>→</i><span>ответ реальности</span><i>→</i><span>корректирую</span><i>→</i><span>следующий шаг</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ГЛАВНЫЙ НАВЫК -->
+<section class="scene">
+  <div class="wrap with-photo flip">
+    <div>
+      <span class="caption">Главный навык</span>
+      <h2 style="margin:20px 0 18px">Сопротивление или тишина в трубке?</h2>
+      <p style="font-size:18px;margin-bottom:28px">Это не про «не получилось — бросай». Наоборот: учимся отличать сопротивление, через которое стоит идти, от тишины, которую пора принять как информацию.</p>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Сопротивление → идём</h3>
+          <ul>
+            <li>Французский сопротивляется. Туда стоит идти</li>
+            <li>Новый бизнес первые месяцы молчит. Гипотезу стоит тестировать</li>
+            <li>Человек один раз не ответил. Это вообще ничего не значит</li>
+          </ul>
+        </div>
+        <div class="panel" style="background:var(--gold)">
+          <h3>Тишина → это данные</h3>
+          <ul>
+            <li>Вы в 47-й раз объясняете одну и ту же потребность</li>
+            <li>12-й месяц продаёте то, что никто не покупает</li>
+            <li>Без вас система не едет вообще никуда</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="photo-stack">
+      <p class="bubble">Алло, реальность? Это снова я. Вы мне перезвоните?</p>
+      <div class="panel halftone tall"><img src="images/daria-red-phone.jpg" alt="Дарья говорит по красному настенному телефону" loading="lazy" style="object-position:center 30%"></div>
+    </div>
+  </div>
+</section>
+
+<!-- МЕТОД -->
+<section class="scene scene-paper2" id="method">
+  <div class="wrap">
+    <div class="scene-head">
+      <span class="caption">Метод</span>
+      <h2>Механика ключей</h2>
+      <p>Квартира во Франции без гарантий, с А1, CAF и EDF — это не везение. Это алгоритм. Его мы и переносим на вашу цель: работу, доход, бизнес, свой круг.</p>
+    </div>
+    <div class="values">
+      <article class="panel"><h3>1. Результат, а не «направление»</h3><p>Не «развивать тему жилья», а «живу в своей квартире». Цель, которую можно проверить фактом, а не ощущением.</p></article>
+      <article class="panel"><h3>2. Ресурс туда, где решаю я</h3><p>Вместо «почему мне не отвечают?» спрашиваем «что из этого зависит от меня сегодня?» и делаем именно это.</p></article>
+      <article class="panel"><h3>3. Свои «15 групп»</h3><p>Квартиру я нашла, потому что была подписана на 15 групп. Строим вам такое же поле: люди, сообщества, площадки, организации.</p></article>
+      <article class="panel"><h3>4. Увидела → написала</h3><p>Без трёх дней раздумий и совещаний с десятью подругами. Возможность сразу превращается в действие, а не в «надо бы написать».</p></article>
+      <article class="panel"><h3>5. Помощь — да, ответственность — моя</h3><p>100% моя ответственность ≠ я обязана всё тащить одна. Люди, рекомендации и сообщества — это рычаги.</p></article>
+      <article class="panel"><h3>6. Препятствие — задача, а не приговор</h3><p>EDF отключил свет — решаем EDF. А не «наверное, весь переезд был ошибкой».</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОГРАММА -->
+<section class="scene" id="program">
+  <div class="wrap">
+    <div class="scene-head">
+      <span class="caption">Программа</span>
+      <h2>90 дней = 3 сезона по 4 серии</h2>
+      <p>Каждый месяц в одном ритме: ставим цель → придумываем гипотезы → приносим, что вышло → подводим итоги и выбираем. От сезона к сезону меняется фокус.</p>
+    </div>
+    <div class="seasons">
+      <article class="frame season">
+        <div class="frame-top"><span>Сезон 1 <span class="free">бесплатно</span></span><b>месяц 1</b></div>
+        <div class="frame-body">
+          <p class="q">«Где я сейчас»</p>
+          <ul>
+            <li><b>Серия 1. Знакомство и цель</b>Рассказываем, с чем приехали, что оставили и в какой точке сейчас. Ставим цель на месяц — такую, которую можно проверить фактом.</li>
+            <li><b>Серия 2. Гипотезы</b>Как к этому прийти? Делим «зависит от меня» и «не зависит». Берём 2–3 гипотезы и первые шаги.</li>
+            <li><b>Серия 3. Ответ реальности</b>Приходим с тем, что получилось, не получилось и где был отклик. Сопротивление или тишина?</li>
+            <li><b>Серия 4. Итоги и выбор</b>Что сработало, куда вкладываемся дальше, что отпускаем. Каждый решает, остаётся ли.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="frame season">
+        <div class="frame-top"><span>Сезон 2</span><b>месяц 2</b></div>
+        <div class="frame-body">
+          <p class="q">«Где мне отвечают»</p>
+          <ul>
+            <li><b>Серия 5. Аудит закрытых дверей</b>Куда уходит ресурс без взаимности: работа, бизнес, отношения, быт. Новая цель — из того, что уже откликнулось.</li>
+            <li><b>Серия 6. Свои «15 групп»</b>Собираем карту источников возможностей. Гипотезы с короткой обратной связью: написал → ответили → поговорили.</li>
+            <li><b>Серия 7. Скорость и контакт</b>Где шанс сразу стал действием, а где осел в «надо бы». Прямые разговоры, просьбы о помощи, договорённости.</li>
+            <li><b>Серия 8. Препятствия — это задачи</b>Какая трудность пыталась доказать, что «всё не то»? Итоги месяца и корректировка.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="frame season">
+        <div class="frame-top"><span>Сезон 3</span><b>месяц 3</b></div>
+        <div class="frame-body">
+          <p class="q">«Моя следующая глава»</p>
+          <ul>
+            <li><b>Серия 9. Главная ставка</b>Цель месяца и один приоритет. Что сейчас пытается украсть внимание и как не дать срочному съесть важное.</li>
+            <li><b>Серия 10. Усиливаем то, что отвечает</b>Как вкладываться больше туда, где уже есть встречное движение.</li>
+            <li><b>Серия 11. Ответ реальности</b>Факты, корректировка, последние шаги к цели.</li>
+            <li><b>Серия 12. Финал сезона</b>Каждый заново рассказывает свою историю: что случилось с жизнью и делом за 90 дней. Сравниваем с первой серией и выбираем следующий сезон.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="strip-out">
+      <div class="panel halftone pic" style="width:220px;height:300px;transform:rotate(-2deg)"><img src="images/daria-stairs.jpg" alt="Дарья поднимается по лестнице с картинами в золотых рамах" loading="lazy"></div>
+      <p class="bubble no-tail">Ступенька за ступенькой. Лифт в этом здании не предусмотрен — зато видно, куда идёшь.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ФОРМАТ -->
+<section class="scene scene-ink" id="format">
+  <div class="wrap">
+    <div class="scene-head">
+      <span class="caption">Как устроен круг</span>
+      <h2>Формат</h2>
+      <p>Между встречами — не домашка ради домашки, а действия, после которых реальность хоть что-то отвечает.</p>
+    </div>
+    <div class="facts facts4">
+      <div class="fact"><b>до 10</b><span>человек в группе — таких же переехавших</span></div>
+      <div class="fact"><b>1 раз</b><span>в неделю в Zoom, 4 встречи в месяц</span></div>
+      <div class="fact"><b>День</b><span>выбираем вместе, когда соберётся группа</span></div>
+      <div class="fact"><b>Чат</b><span>в Telegram — всё общение между встречами</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРАВИЛА -->
+<section class="scene" id="rules">
+  <div class="wrap">
+    <div class="with-photo flip" style="margin-bottom:40px">
+      <div>
+        <span class="caption">Правила площадки</span>
+        <h2 style="margin:20px 0 18px">Я здесь коуч и медиатор. Френдли — не значит «можно всё»</h2>
+        <p style="font-size:18px">Круг работает, только когда в нём безопасно говорить правду. Поэтому правила простые, и я за ними слежу.</p>
+      </div>
+      <div class="photo-stack">
+        <p class="bubble">Что было в круге — остаётся в круге.</p>
+        <div class="panel halftone" style="aspect-ratio:1"><img src="images/daria-shh.jpg" alt="Дарья прижимает палец к губам: тсс" loading="lazy" style="object-position:center 30%"></div>
+      </div>
+    </div>
+    <div class="rules">
+      <article class="frame">
+        <div class="frame-top"><span>Гарантирую</span><b>✓</b></div>
+        <div class="frame-body">
+          <ul>
+            <li>Френдли-среду без оценок и «а я бы на твоём месте»</li>
+            <li>Конфиденциальность: чужие истории не уходят за пределы круга</li>
+            <li>Каждому — время сказать своё, никто не перетягивает эфир</li>
+            <li>Фокус на ваших целях, действиях и фактах</li>
+            <li>Право сказать «пас» и не рассказывать то, что не хочется</li>
+            <li>Модерацию: если разговор уходит не туда, я его возвращаю</li>
+          </ul>
+        </div>
+      </article>
+      <article class="frame no">
+        <div class="frame-top"><span>Чего не будет</span><b>✕</b></div>
+        <div class="frame-body">
+          <ul>
+            <li>Марафонов «успешного успеха» и мотивашек</li>
+            <li>Магического мышления: «просто отпусти, и деньги придут»</li>
+            <li>Непрошеных советов и экспертов по чужой жизни</li>
+            <li>Бесконечных разборов, кто кому что сказал</li>
+            <li>Гарантий дохода и обещаний, что я знаю, куда вам надо</li>
+            <li>Терапии: коучинг — не про лечение травм</li>
+          </ul>
+        </div>
+      </article>
+      <article class="frame ban">
+        <div class="frame-top"><span>Удаляю из Zoom и чата</span><b>в ЧС</b></div>
+        <div class="frame-body">
+          <ul>
+            <li>Оскорбления и переход на личности</li>
+            <li>Обесценивание: «зачем ты вообще уехала», «сама виновата»</li>
+            <li>Скрины, пересказы и чужие истории за пределами круга</li>
+            <li>Спам, реклама, сетевой маркетинг и «у меня есть курс» без спроса</li>
+            <li>Политические срачи и хейт по национальности, религии, полу</li>
+            <li>Подкаты и навязчивые сообщения в личку без согласия</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- КТО ВЕДЁТ -->
+<section class="scene scene-paper2" id="about">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="panel halftone hero-photo"><img src="images/daria-portrait.jpg" alt="Портрет Дарьи Терёхиной" loading="lazy"></div>
+      <div>
+        <span class="caption">Кто ведёт</span>
+        <h2 style="margin:20px 0 12px">Дарья Терёхина</h2>
+        <p style="font-size:18px">Коуч, предприниматель и переехавшая. Живу в Монпелье.</p>
+        <p class="turn">31 августа 2026 моя жизнь развернулась на <b>180°</b>: вышла из отношений → переехала → свои апарты и обязательства перед собой.</p>
+        <p style="font-size:16px;color:var(--muted)">Что было дальше — без монтажа:</p>
+        <ul class="log">
+          <li>Заключила контракт с EDF. Цена вопроса — полтора часа разговора с консультантом на французском</li>
+          <li>Плачу аренду сама</li>
+          <li>Восстановила налоговый номер</li>
+          <li>Добилась положительного решения по соцпомощи на аренду</li>
+          <li>Нашла свои игры и людей, с которыми по кайфу: каждые выходные — спортивная мафия</li>
+          <li>Стала резиденткой Women at Work и хожу на бизнес-встречи</li>
+        </ul>
+        <p class="bubble no-tail" style="font-size:18px">Пока живу соло-жизнь. Попытки отменить соло-режим пока не увенчались успехом. Записываю в данные, без драмы.</p>
+        <div class="facts">
+          <div class="fact"><b>18 лет</b><span>в бизнесе</span></div>
+          <div class="fact"><b>4 года</b><span>наставник бизнес-трекеров</span></div>
+          <div class="fact"><b>120+</b><span>предпринимателей и специалистов</span></div>
+        </div>
+        <p class="creds">Coaching.Up University: Level 1 (по стандартам ICF) и Level 2 (EMCC и Association for Coaching). Сейчас прохожу сертификацию ICF на уровень PCC. <a class="link" href="certificates.html">Сертификаты</a></p>
+      </div>
+    </div>
+    <div class="duo">
+      <figure><div class="halftone pic"><img src="images/daria-community.jpg" alt="Дарья с участницами бизнес-сообщества показывают сердечки руками" loading="lazy" style="object-position:center 40%"></div><figcaption class="caption paper">Women at Work: свой круг, в котором отвечают</figcaption></figure>
+      <figure><div class="halftone pic"><img src="images/daria-group-evening.jpg" alt="Вечерняя встреча женского бизнес-сообщества на террасе" loading="lazy" style="object-position:center 45%"></div><figcaption class="caption paper">Тот самый ближний круг, только вживую</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- СТОИМОСТЬ -->
+<section class="scene" id="price">
+  <div class="wrap">
+    <div class="scene-head">
+      <span class="caption">Билеты</span>
+      <h2>Сколько стоит</h2>
+      <p>Подписка без ловушек: не зашло — просто не продлеваете.</p>
+    </div>
+    <div class="tickets tickets2">
+      <article class="ticket main">
+        <div class="ticket-head"><small>Сезон 1 · пилот</small><h3>Первый месяц</h3></div>
+        <div class="ticket-body">
+          <p class="price">0 €<small>4 встречи в Zoom и чат. Пробуете формат без обязательств.</small></p>
+          <a class="btn btn-ink" href="https://t.me/dar_terehina" target="_blank" rel="noopener">Хочу в круг</a>
+        </div>
+      </article>
+      <article class="ticket dark">
+        <div class="ticket-head"><small>Если формат зашёл</small><h3>Подписка</h3></div>
+        <div class="ticket-body">
+          <p class="price">15 € / мес<small>С участника. Выйти можно в любой момент.</small></p>
+          <a class="btn btn-gold" href="https://t.me/dar_terehina" target="_blank" rel="noopener">Спросить в Telegram</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="scene scene-paper2">
+  <div class="wrap">
+    <div class="scene-head">
+      <span class="caption">Вопросы из зала</span>
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq">
+      <details><summary>У меня нет бизнеса. Мне можно?</summary><p>Да. Цель может быть про работу, доход, язык, жильё, круг общения или своё дело. Механика одна и та же.</p></details>
+      <details><summary>Это групповая терапия?</summary><p>Нет. Это групповой коучинг: цели, действия, факты из реальности. Если нужна помощь психолога или психотерапевта, подскажу, куда обратиться.</p></details>
+      <details><summary>На каком языке?</summary><p>На русском. Французский — только в историях про EDF.</p></details>
+      <details><summary>А если пойму, что не моё?</summary><p>Первый месяц бесплатный. Дальше — подписка, из которой можно выйти в любой момент, без объяснительных.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="finale scene-gold" id="join">
+  <div class="wrap finale-grid">
+    <div class="panel halftone finale-pic"><img src="images/daria-hand-heart.png" alt="Рука с жестом «ну и чего ждём?» на фоне моря" loading="lazy"></div>
+    <div>
+      <span class="sfx">Ну и чего ждём?</span>
+      <h2>Перестаньте уговаривать закрытые двери. Идите туда, где открывают с другой стороны.</h2>
+      <p>Набираю группу до 10 человек. Напишите мне «Хочу в круг» — и первый месяц бесплатно.</p>
+      <div class="cta-row">
+        <a class="btn btn-ink" href="https://t.me/dar_terehina" target="_blank" rel="noopener">Написать «Хочу в круг»</a>
+        <a class="btn" href="https://wa.me/33604198367" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="index.html"><svg viewBox="0 0 72 72" fill="none" aria-hidden="true"><path d="M36 4 49 25 64 20 56 52 36 65 16 52 8 20 23 25 36 4Z" stroke="currentColor" stroke-width="3"/><path d="M36 4v61M8 20l28 45 28-45M23 25l13 40 13-40" stroke="currentColor" stroke-opacity=".5" stroke-width="1.6"/></svg><span><b>MENTAL<span>AUDIT</span></b><small>Дарья Терёхина</small></span></a>
+        <p>Новая страна. Свои правила. Свой сценарий.</p>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://t.me/dar_terehina" target="_blank" rel="noopener">Telegram @dar_terehina</a>
+        <a href="https://wa.me/33604198367" target="_blank" rel="noopener">WhatsApp +33 6 04 19 83 67</a>
+        <a href="mailto:dariaterekhina@mentalaudit.fr">dariaterekhina@mentalaudit.fr</a>
+      </div>
+    </div>
+    <div class="socials" aria-label="Социальные сети">
+      <a href="https://t.me/thinkclearly_now" target="_blank" rel="noopener">Канал «Думай ясно»</a>
+      <a href="https://www.instagram.com/dar_terekhina" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.threads.com/@dar_terekhina" target="_blank" rel="noopener">Threads</a>
+      <a href="https://youtube.com/@dar_terekhina" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://dariaterehina.substack.com" target="_blank" rel="noopener">Substack</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mental Audit, Дарья Терёхина</span>
+      <span><a href="https://docs.google.com/document/d/1q0NrdJZFEnXhmR4tX918Z0RPZUDRDrlL/edit?usp=drive_link" target="_blank" rel="noopener">Политика конфиденциальности</a> &nbsp; <a href="https://docs.google.com/document/d/1GY1hgu3mqL7DzoUqWoynKWMrRLRtPLpX/edit?usp=drive_link" target="_blank" rel="noopener">Политика cookies</a></span>
+    </div>
+    <p class="legal">Коучинг не является психотерапией или медицинской помощью. Результаты зависят от ситуации и действий участника; доход не гарантируется.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://dariaterekhina.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;
+  var h=a.href,n=null;
+  if(h.indexOf('t.me/dar_terehina')>-1)n='klik-krug-telegram';
+  else if(h.indexOf('wa.me')>-1)n='klik-krug-whatsapp';
+  else if(h.indexOf('t.me/thinkclearly')>-1)n='klik-kanal-dumay-yasno';
+  else if(h.indexOf('substack')>-1)n='klik-substack';
+  else if(h.indexOf('instagram')>-1)n='klik-instagram';
+  else if(h.indexOf('threads')>-1)n='klik-threads';
+  else if(h.indexOf('youtube')>-1)n='klik-youtube';
+  if(n&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:n,title:(a.textContent||'').trim().slice(0,60)+' — '+location.pathname,event:true});
+});
+</script>
+</body>
+</html>
