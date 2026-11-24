@@ -470,3 +470,14 @@ ul{margin:0;padding-left:20px}
 .tickets4 .ticket::before,.tickets4 .ticket::after{top:106px}
 @media (max-width:1100px){.tickets4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.tickets4{grid-template-columns:1fr}}
+
+/* Главная: общий коллаж Women at Work с одной плашкой */
+.frame.collage-frame{grid-column:1/-1}
+.collage{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:3px;background:var(--ink);height:360px}
+.collage .halftone{height:100%}
+.collage-cap{padding:18px 20px 20px;background:var(--white);border-top:var(--line) solid var(--ink)}
+.collage-cap .caption{transform:rotate(-1deg)}
+@media (max-width:760px){
+  .collage{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:200px 220px;height:auto}
+  .collage .c-main{grid-column:1/-1}
+}
