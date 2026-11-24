@@ -462,3 +462,11 @@ ul{margin:0;padding-left:20px}
   .cover-art{margin-top:40px}
 }
 @media (min-width:1001px) and (max-width:1280px){.cover-art .bubble{right:-12px;max-width:360px}}
+
+/* Билеты на главной: четыре билета, включая «Ближний круг» */
+.tickets4{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.tickets4 .ticket-head{min-height:118px;padding:24px 22px 18px}
+.tickets4 .ticket-body{padding:22px 22px 24px}
+.tickets4 .ticket::before,.tickets4 .ticket::after{top:106px}
+@media (max-width:1100px){.tickets4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.tickets4{grid-template-columns:1fr}}
